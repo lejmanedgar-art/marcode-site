@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MARCODE — оператор маркировки</title>
+  <meta name="description" content="MARCODE — Честный Знак под ключ для WB/Ozon/ЯМ: запуск, КИЗы, документы. С 2019 года." />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="bg" aria-hidden="true">
+    <div class="bg__grid"></div>
+    <div class="bg__grain"></div>
+    <div class="bg__glow bg__glow--a"></div>
+    <div class="bg__glow bg__glow--b"></div>
+    <div class="bg__scan"></div>
+    <div class="mouseglow" id="mouseglow"></div>
+  </div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="MARCODE">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__name">MARCODE</span>
+      </a>
+
+      <nav class="nav" aria-label="Навигация">
+        <a href="#services">Услуги</a>
+        <a href="#process">Процесс</a>
+        <a href="#pricing">Цены</a>
+        <a href="#faq">FAQ</a>
+        <a href="#lead">Заявка</a>
+      </nav>
+
+      <div class="actions">
+        <a class="btn btn--ghost magnet" href="https://t.me/markirovk" target="_blank" rel="noreferrer">Telegram</a>
+        <a class="btn btn--solid magnet" href="#lead">Оставить заявку</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__left">
+          <div class="pill" data-reveal>
+            <span class="pill__dot"></span>
+            <span>Оператор маркировки • с 2019 • WB / Ozon / ЯМ</span>
+          </div>
+
+          <h1 data-reveal>
+            Честный Знак под ключ
+            <span class="accent">без штрафов и блокировок</span>
+          </h1>
+
+          <p class="lead" data-reveal>
+            Настраиваем систему и процессы маркировки так, чтобы продажи на маркетплейсах шли стабильно:
+            ЭДО, роуминг, УПД, КИЗы, ввод в оборот — всё под контролем.
+          </p>
+
+          <div class="cta" data-reveal>
+            <a class="btn btn--solid magnet" href="#lead">Получить консультацию</a>
+            <button class="btn btn--ghost magnet" id="btnReveal" type="button">Показать цены</button>
+          </div>
+
+          <!-- Trust bar вместо “баннера с промокодом” -->
+          <div class="trust" data-reveal>
+            <div class="trust__item"><b>С 2019</b><span>в маркировке</span></div>
+            <div class="trust__item"><b>WB / Ozon / ЯМ</b><span>рабочие схемы</span></div>
+            <div class="trust__item"><b>Под ключ</b><span>или точечно</span></div>
+            <div class="trust__item"><b>Поддержка</b><span>после запуска</span></div>
+          </div>
+        </div>
+
+        <aside class="glass hero__card" data-reveal>
+          <div class="scan"></div>
+
+          <div class="glass__top">
+            <div class="glass__title">Закрываем под ключ</div>
+            <div class="glass__sub">1–2 созвона → запуск</div>
+          </div>
+
+          <div class="glass__list">
+            <div class="line"><b>ЧЗ</b><span>регистрация • карточки • ЭДО</span></div>
+            <div class="line"><b>Роуминг</b><span>с маркетплейсом + корректные УПД</span></div>
+            <div class="line"><b>КИЗы</b><span>коды + готовые этикетки DataMatrix</span></div>
+            <div class="line"><b>Документы</b><span>декларации • сертификаты • отказные</span></div>
+          </div>
+
+          <a class="btn btn--solid btn--wide magnet" href="#lead">Оставить заявку</a>
+          <div class="tiny muted">Менеджер: <a class="link" href="https://t.me/markirovk" target="_blank" rel="noreferrer">@markirovk</a></div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <h2>Услуги</h2>
+          <p class="muted">Три направления. Никакой лишней мишуры.</p>
+        </div>
+
+        <div class="grid3">
+          <div class="glass" data-reveal>
+            <div class="scan"></div>
+            <h3>Маркировка под ключ</h3>
+            <p class="muted">Запуск ЧЗ + связка с маркетплейсом: ЭДО, роуминг, УПД, карточки.</p>
+          </div>
+          <div class="glass" data-reveal>
+            <div class="scan"></div>
+            <h3>КИЗы</h3>
+            <p class="muted">Создаём коды и отдаём готовые этикетки. Цена зависит от объёма.</p>
+          </div>
+          <div class="glass" data-reveal>
+            <div class="scan"></div>
+            <h3>Документы</h3>
+            <p class="muted">Декларации / сертификаты / отказные письма — под категорию товара.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process" class="section">
+      <div class="container">
+        <div class="section__head row" data-reveal>
+          <div>
+            <h2>Процесс</h2>
+            <p class="muted">4 шага. Без хаоса. С контролем рисков.</p>
+          </div>
+        </div>
+
+        <div class="grid2">
+          <div class="glass" data-reveal>
+            <div class="scan"></div>
+            <h3>1) Диагностика</h3>
+            <p class="muted">Категория, ТН ВЭД, схема (импорт/производство), маркетплейс.</p>
+          </div>
+          <div class="glass" data-reveal>
+            <div class="scan"></div>
+            <h3>2) Настройка</h3>
+            <p class="muted">ЧЗ, ЭДО, роуминг, карточки, УПД — в рабочее состояние.</p>
+          </div>
+          <div class="glass" data-reveal>
+            <div class="scan"></div>
+            <h3>3) КИЗы и ввод</h3>
+            <p class="muted">Коды, печать/этикетки, ввод в оборот, корректная передача.</p>
+          </div>
+          <div class="glass" data-reveal>
+            <div class="scan"></div>
+            <h3>4) Сопровождение</h3>
+            <p class="muted">Контроль ошибок, вопросы по операциям, доведение до “стабильно”.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="section">
+      <div class="container">
+        <div class="section__head row" data-reveal>
+          <div>
+            <h2>Цены</h2>
+            <p class="muted">Скрыто по умолчанию. Открывается кнопкой.</p>
+          </div>
+          <div class="tiny muted">Промокод MARCODE: скидка 25% на первый заказ</div>
+        </div>
+
+        <div class="grid3">
+          <div class="glass price" data-reveal>
+            <div class="scan"></div>
+            <h3>Под ключ</h3>
+            <div class="price__value" data-price="turnkey">Стоимость по запросу</div>
+            <div class="tiny muted">регистрация • ЭДО • роуминг • УПД</div>
+          </div>
+
+          <div class="glass price price--accent" data-reveal>
+            <div class="scan"></div>
+            <h3>КИЗы</h3>
+            <div class="price__value" data-price="kiz">Стоимость по запросу</div>
+            <div class="tiny muted">7 → 6.5 → 6 → 5.5 ₽ / шт</div>
+          </div>
+
+          <div class="glass price" data-reveal>
+            <div class="scan"></div>
+            <h3>Документы</h3>
+            <div class="price__value" data-price="docs">Стоимость по запросу</div>
+            <div class="tiny muted">от 5 000 ₽ / от 20 000 ₽ / от 40 000 ₽</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <h2>FAQ</h2>
+          <p class="muted">Коротко — чтобы снять типовые вопросы.</p>
+        </div>
+
+        <div class="grid2">
+          <details class="glass" data-reveal>
+            <summary>Мой товар точно подлежит маркировке?</summary>
+            <p class="muted">Определяем по коду ТН ВЭД и категории. Если не знаешь — поможем установить корректно.</p>
+          </details>
+
+          <details class="glass" data-reveal>
+            <summary>Сколько времени занимает запуск?</summary>
+            <p class="muted">Зависит от готовности ЭЦП/ЭДО и категории. Обычно запускаем за несколько рабочих дней.</p>
+          </details>
+
+          <details class="glass" data-reveal>
+            <summary>Вы работаете с WB/Ozon/ЯМ?</summary>
+            <p class="muted">Да. Настраиваем роуминг и правильную цепочку УПД под конкретный маркетплейс.</p>
+          </details>
+
+          <details class="glass" data-reveal>
+            <summary>Можно только КИЗы, без “под ключ”?</summary>
+            <p class="muted">Да. Работаем как “под ключ”, так и точечно.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORM -->
+    <section id="lead" class="section">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <h2>Заявка</h2>
+          <p class="muted">Контакт + категория — вернёмся с планом действий.</p>
+        </div>
+
+        <form class="form glass" data-reveal onsubmit="event.preventDefault(); alert('Демо-форма. Дальше подключим отправку на почту/CRM. Пока — Telegram @markirovk');">
+          <div class="scan"></div>
+
+          <div class="grid2">
+            <label>Имя
+              <input name="name" required placeholder="Имя" />
+            </label>
+            <label>Телефон / Telegram
+              <input name="contact" required placeholder="+7… или @username" />
+            </label>
+          </div>
+
+          <div class="grid2">
+            <label>Маркетплейс
+              <select name="marketplace">
+                <option>Wildberries</option>
+                <option>Ozon</option>
+                <option>Яндекс Маркет</option>
+                <option>Другое</option>
+              </select>
+            </label>
+            <label>Категория
+              <input name="category" placeholder="одежда / обувь / косметика" />
+            </label>
+          </div>
+
+          <label>Комментарий
+            <textarea name="message" rows="4" placeholder="Импорт/производство, объём, что уже сделано"></textarea>
+          </label>
+
+          <div class="form__bottom">
+            <label class="checkbox">
+              <input type="checkbox" required />
+              <span>Согласие на обработку данных</span>
+            </label>
+            <button class="btn btn--solid magnet" type="submit">Отправить</button>
+          </div>
+
+          <div class="tiny muted">Telegram: <a class="link" href="https://t.me/markirovk" target="_blank" rel="noreferrer">@markirovk</a></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="tiny muted">© <span id="year"></span> MARCODE</span>
+      <span class="sep">•</span>
+      <a class="tiny link" href="https://t.me/chestnyznakcrpt" target="_blank" rel="noreferrer">канал</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
